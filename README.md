@@ -32,9 +32,9 @@ We've provided you with a console that you can use to test your code. To enter a
 <!-- - `Startup#founder`
   - returns a **string** that is the founder's name
   - Once a startup is created, the founder cannot be changed. -->
-- `Startup#domain`
+<!-- - `Startup#domain`
   - returns a **string** that is the startup's domain
-  - Once a startup is created, the domain cannot be changed (ie. A developer working with instances of the Startup class cannot directly change the domain)
+  - Once a startup is created, the domain cannot be changed (ie. A developer working with instances of the Startup class cannot directly change the domain) -->
 <!-- - `Startup#pivot`
   - given a string of a **domain** and a string of a **name**, change the domain and name of the startup. This is the only public method through which the domain can be changed. -->
 <!-- - `Startup.all`
@@ -82,28 +82,28 @@ We've provided you with a console that you can use to test your code. To enter a
 
 #### Startup
 
-- `Startup#sign_contract`
-  - given a **venture capitalist object**, type of investment (as a string), and the amount invested (as a float), creates a new funding round and associates it with that startup and venture capitalist.
-- `Startup#num_funding_rounds`
-  - Returns the total number of funding rounds that the startup has gotten
-- `Startup#total_funds`
-  - Returns the total sum of investments that the startup has gotten
-- `Startup#investors`
-  - Returns a **unique** array of all the venture capitalists that have invested in this company
-- `Startup#big_investors`
-  - Returns a **unique** array of all the venture capitalists that have invested in this company and are in the Trés Commas club
+<!-- - `Startup#sign_contract`
+  - given a **venture capitalist object**, type of investment (as a string), and the amount invested (as a float), creates a new funding round and associates it with that startup and venture capitalist. -->
+<!-- - `Startup#num_funding_rounds`
+  - Returns the total number of funding rounds that the startup has gotten -->
+<!-- - `Startup#total_funds`
+  - Returns the total sum of investments that the startup has gotten -->
+<!-- - `Startup#investors`
+  - Returns a **unique** array of all the venture capitalists that have invested in this company -->
+<!-- - `Startup#big_investors`
+  - Returns a **unique** array of all the venture capitalists that have invested in this company and are in the Trés Commas club -->
 
 #### VentureCapitalist
 
-- `VentureCapitalist#offer_contract`
-  - given a **startup object**, type of investment (as a string), and the amount invested (as a float), creates a new funding round and associates it with that startup and venture capitalist.
-- `VentureCapitalist#funding_rounds`
-  - returns an array of all funding rounds for that venture capitalist
-- `VentureCapitalist#portfolio`
-  - Returns a **unique** list of all startups this venture capitalist has funded
-- `VentureCapitalist#biggest_investment`
-  - returns the largest funding round given by this venture capitalist
-- `VentureCapitalist#invested`
-  - given a **domain string**, returns the total amount invested in that domain
+<!-- - `VentureCapitalist#offer_contract`
+  - given a **startup object**, type of investment (as a string), and the amount invested (as a float), creates a new funding round and associates it with that startup and venture capitalist. -->
+<!-- - `VentureCapitalist#funding_rounds`
+  - returns an array of all funding rounds for that venture capitalist -->
+<!-- - `VentureCapitalist#portfolio`
+  - Returns a **unique** list of all startups this venture capitalist has funded -->
+<!-- - `VentureCapitalist#biggest_investment`
+  - returns the largest funding round given by this venture capitalist -->
+<!-- - `VentureCapitalist#invested`
+  - given a **domain string**, returns the total amount invested in that domain -->
 
 ---

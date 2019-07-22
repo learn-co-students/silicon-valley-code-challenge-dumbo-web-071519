@@ -33,4 +33,30 @@ class Startup
         end.uniq
     end
 
+    #part 2
+    def sign_contract(vc, type, investment)
+        FundingRound.new(self, vc, type, investment)
+    end
+
+    def num_funding_rounds
+        FundingRound.all.count{|round| round.startup == self}
+    end
+
+    def total_funds
+        FundingRound.all.sum{|round| round.investment}
+    end
+
+    def investors
+        FundingRound.all.map do |round|
+            round.venture_capitalist
+        end.uniq
+    end
+
+    def big_investors
+        self.investors.select do |investor|
+            VentureCapitalist.tres_commas_club.include?(investor)
+        end.uniq
+    end
+
+
 end
